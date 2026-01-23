@@ -23,9 +23,12 @@ public class CountdownChallenge : MonoBehaviour
             tickAction();
             timePass = 0;
         }
-        if(time == 0)
+        if(time == 0&&!timesUp)
         {
+            Debug.Log("TIMES UP");
             timesUp=true;
+
+            
         }
 
     }
